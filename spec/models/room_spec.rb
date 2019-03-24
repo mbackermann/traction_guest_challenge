@@ -11,4 +11,6 @@ RSpec.describe Room, type: :model do
     subject.name = nil
     expect(subject).to_not be_valid
   end
+
+  it { should have_many :tracks }
 end

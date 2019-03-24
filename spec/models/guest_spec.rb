@@ -25,4 +25,6 @@ RSpec.describe Guest, type: :model do
     Guest.create(subject.attributes)
     expect(subject).to_not be_valid
   end
+
+  it { should have_many :tracks }
 end
