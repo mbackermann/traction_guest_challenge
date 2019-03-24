@@ -26,5 +26,5 @@ RSpec.describe Guest, type: :model do
     expect(subject).to_not be_valid
   end
 
-  it { should have_many :tracks }
+  it { should have_many(:tracks).dependent(:destroy) }
 end
