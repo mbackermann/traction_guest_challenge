@@ -28,9 +28,19 @@ Generating an alert if some one is on an prohibited area (to avoid tailgating/pi
 Some method of authentication between the sensors/name tags and the receivers, and the receivers and the backend should be implemented, to avoid someone from tampering with the system.
 Every event (like door locking/unlocking) should be logged for auditing
 
-### API
+### Usage
 
 To describe our idea we developed an API so it would be easier to explain. We have three Models in our App. __Guests__, __Rooms__ and __Tracks__. The idea is that we log in the database whenever a guest enters or leaves a room.
+
+
+```
+git clone https://github.com/mbackermann/traction_guest_challenge.git
+cd traction_guest_challenge
+make build
+make migrate
+make start
+```
+#### API
 
 #### Endpoints
 
