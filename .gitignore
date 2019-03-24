@@ -8,7 +8,9 @@
 /.bundle
 
 # Ignore files from vim
-*.un~
+.*.un~
+.*.swp
+.*.swo
 
 # Ignore all logfiles and tempfiles.
 /log/*
